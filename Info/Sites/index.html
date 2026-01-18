@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/Wilko.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinso | Daniel Wilkinson</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+  <body>
+    <nav id="header"></nav>
+
+    <h1>33 Strategies of War</h1>
+      <a href="https://www.leetcode.com">Leetcode</a><br>
+      <a href="https://www.codewars.com/">codewars</a><br>
+      <a href="https://www.hackerrank.com/">hackerrank</a><br>
+      <a href="https://exercism.org/">exercism</a><br>
+      <p>Cyber Security</p><br>
+      <a href="https://overthewire.org/wargames/">wargames</a><br>
+      <a href="https://tryhackme.com/">tryhackme</a><br>
+      <a href="https://www.hackthebox.com/">hackthebox</a><br>
+
+
+  </body>
+  
+  <script>
+    fetch("../../header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+
+</html>

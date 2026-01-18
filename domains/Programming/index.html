@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/Wilko.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinso | Daniel Wilkinson</title>
+    <link rel="stylesheet" href="../../styles.css"> 
+</head>
+  <nav id="header"></nav>
+
+  <body>
+    <h1>Programming</h1>
+   <p>
+       <h2>Ideas</h2>
+       Project write ups<br>
+       Games<br>
+       iphone apps<br>
+       other websites<br>
+       Certs?<br>
+       Tools I use<br><br><br>
+
+       <h2>Practice</h2>
+       Leetcode<br>
+       Codewars<br>
+       Exercism<br>
+       Advent of Code<br><br><br>
+
+
+       <h2>Project Ideas</h2>
+       Log Parser<br>
+       CLI task manager<br>
+       Simple Http Server<br>
+       File Organiser based on rules<br>
+    </p>
+  </body>
+
+  <script>
+    fetch("../../header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+
+</html>

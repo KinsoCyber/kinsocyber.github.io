@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="Wilko.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinso | Daniel Wilkinson</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+  <div id="header"></div>
+  
+  <body>
+    <h2>About Me</h2>
+    <pre>
+Hi, I’m Daniel Wilkinson, and I go by the alias Kinso online. I’m currently studying an Associate Degree in Information Technology.
+
+I’m highly competitive and motivated by challenge, always looking for ways to push myself and improve. I work well
+in team environments and have experience contributing to focused, high-pressure discussions where clear communication matters.
+
+I’m passionate about leadership and believe the most effective leaders set the standard through their actions.
+
+
+    </pre>
+    <p>In this Blog I will detail my achievments and projects in my career.<br><br>
+    This Website was made for hosting on a home server to learn the processes of hosting websites and server maintaince <br>
+    However I will likely move it to a web hosting service for privacy and security reasons.</p>
+  </body>
+
+  <script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+
+</html>

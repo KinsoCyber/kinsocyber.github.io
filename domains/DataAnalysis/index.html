@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/Wilko.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinso | Daniel Wilkinson</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+  <body>
+    <nav id="header"></nav>
+
+
+    <h1>Data Analysis</h1>
+    <p>
+      <h2>Ideas</h2>
+      My own database<br>
+      Certs?<br>
+      Tools I use<br><br><br>
+
+      <h2>Practice</h2>
+      Kaggle<br>
+      DataCamp<br>
+      SQLBolt<br><br><br>
+
+
+      <h2>Project Ideas</h2>
+      Analyse my own activity logs<br>
+      Game performance statistics<br>
+      Error frequency over time<br>
+      CSV insights graph explanation<br>
+    </p>
+  </body>
+  
+  <script>
+    fetch("/header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+
+</html>

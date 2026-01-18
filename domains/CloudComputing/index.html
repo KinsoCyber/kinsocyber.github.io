@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/Wilko.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinso | Daniel Wilkinson</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+  <body>
+    <nav id="header"></nav>
+
+    <h1>Cloud Computing</h1>
+    <p>
+      <h2>Ideas</h2>
+      Certs?<br>
+      Tools I use<br><br><br>
+
+      <h2>Practice</h2>
+      AWS Skill builder<br>
+      Azure Learn<br>
+      GCP Qwiklabs<br><br><br>
+
+
+      <h2>Project Ideas</h2>
+      Deploy the same app locally and in cloud<br>
+      Static site + CDN<br>
+      VM vs container comparison<br>
+      Cost breakdown write-upSH hardening checklist+script<br>
+    </p>
+  </body>
+
+  <script>
+    fetch("/header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+
+</html>

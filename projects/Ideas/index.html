@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/Wilko.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinso | Daniel Wilkinson</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+  <body>
+
+    <nav id="header"></nav>
+
+    <h1>Ideas</h1>
+    <ol>
+      <li>AI me trained on my speech and thoughts</li>
+      <li>Game Server Homelab</li>
+      <li>Ios app for voice memos maybe AI intergration</li>
+    </ol>
+  </body>
+
+
+<script>
+    fetch("../../header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+
+</html>
